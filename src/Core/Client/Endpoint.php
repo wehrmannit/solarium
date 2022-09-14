@@ -257,7 +257,7 @@ class Endpoint extends Configurable
         $collection = $this->getCollection();
 
         if ($collection) {
-            $uri .= 'solr/'.$collection.'/';
+            $uri .= ''.$collection.'/';
         } else {
             throw new UnexpectedValueException('No collection set.');
         }
@@ -281,7 +281,7 @@ class Endpoint extends Configurable
 
         if ($core) {
             // V1 API
-            $uri .= 'solr/'.$core.'/';
+            $uri .= ''.$core.'/';
         } else {
             throw new UnexpectedValueException('No core set.');
         }
